@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { editionWindow, normalize, collect,clean } from '../scripts/news.mjs';
+import { rankArticles } from '../lib/preferences.js';
+import { publicIPv4 } from '../scripts/thumbnail.mjs';
+const now=new Date('2026-09-08T00:30:00Z'),window=editionWindow(now);
+const item={title:'<b>인공지능</b> 연구 &amp; 기술',description:'가'.repeat(120),originallink:'https://www.etnews.com/202609070001?utm_source=test',pubDate:'Mon, 07 Sep 2026 12:00:00 +0900'};
+ test('09:00 KST window remains stable before and after local midnight',()=>{assert.equal(window.end.toISOString(),'2026-09-08T00:00:00.000Z');assert.equal(editionWindow(new Date('2026-09-07T23:59:59Z')).end.toISOString(),'2026-09-07T00:00:00.000Z');});
+ test('normalization and exact interval boundaries',()=>{const a=normalize(item,window);assert.equal(a.excerpt.length,100);assert.equal(a.title,'인공지능 연구 & 기술');assert.equal(a.url,'https://www.etnews.com/202609070001');assert.ok(normalize({...item,pubDate:window.start.toISOString()},window));assert.equal(normalize({...item,pubDate:window.end.toISOString()},window),null);assert.equal(normalize({...item,pubDate:'invalid'},window),null);assert.equal(normalize({...item,originallink:'https://etnews.com.attacker.test/a'},window),null);assert.equal(normalize({...item,title:'주식',description:'일반 뉴스'},window),null);assert.equal(clean('<script>bad()</script>본문'),'본문');});
+ test('collection deduplicates and records partial failure',async()=>{const data=await collect({now,queries:['a','b'],request:async q=>{if(q==='b')throw new Error('HTTP_500');return {total:2,items:[item,item]};}});assert.equal(data.articles.length,1);assert.equal(data.errors.length,1);});
+ test('authentication and total failure reject before publication',async()=>{await assert.rejects(collect({now,request:async()=>{throw new Error('HTTP_401');}}),/HTTP_401/);await assert.rejects(collect({now,request:async()=>{throw new Error('HTTP_500');}}),/ALL_REQUESTS_FAILED/);});
+ test('valid empty collection is published as empty',async()=>{assert.equal((await collect({now,request:async()=>({items:[],total:0})})).articles.length,0);});
+ test('topic ranking, hiding and latest ordering',()=>{const articles=[{id:'a',category:'연구',publishedAt:'2026-09-07T01:00Z'},{id:'b',category:'산업·투자',publishedAt:'2026-09-07T02:00Z'}];const p={topics:['연구'],hidden:[],disliked:{}};assert.equal(rankArticles(articles,p)[0].id,'a');assert.equal(rankArticles(articles,p,'latest')[0].id,'b');assert.equal(rankArticles(articles,{...p,hidden:['a']}).length,1);});
+ test('private and metadata addresses cannot be fetched',()=>{for(const ip of ['127.0.0.1','10.0.0.1','169.254.169.254','172.16.0.1','192.168.1.1','100.64.0.1','0.0.0.0','::1'])assert.equal(publicIPv4(ip),false);assert.equal(publicIPv4('8.8.8.8'),true);});

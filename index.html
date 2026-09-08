@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="매일 아침 9시, 내 관심사로 읽는 국내 AI 뉴스.">
+  <title>아홉시 — 나의 AI 뉴스스탠드</title>
+  <link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="/" aria-label="아홉시 홈">아홉시<span class="brand-dot">.</span></a><span class="edition">AI NEWSSTAND<br>DAILY EDITION · 09:00 KST</span></header>
+  <main>
+    <section class="heading"><div><p class="eyebrow">하루 한 번, 나의 시선으로</p><h1>오늘의 AI, 한눈에.</h1></div><p id="edition-date" class="date">오늘의 지면을 준비합니다.</p></section>
+    <section class="preferences" aria-labelledby="preference-title"><div class="preference-label"><h2 id="preference-title">나의 관심사</h2><p>선택한 주제의 기사가 먼저 보여요.</p></div><div id="topics" class="chips" role="group" aria-label="우선 표시할 관심 주제"></div></section>
+    <div class="toolbar"><p id="count" aria-live="polite">기사를 불러오는 중</p><div><button id="restore" class="text-button" hidden>숨긴 기사 복원</button><label class="sort-label">정렬 <select id="sort"><option value="personal">내 취향순</option><option value="latest">최신순</option></select></label></div></div>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <section id="news" class="grid" aria-label="기사 목록" aria-busy="true"></section>
+    <div id="empty" class="empty" hidden><span class="empty-symbol">09:00</span><h2 id="empty-title">기사를 불러오는 중입니다.</h2><p id="empty-description"></p><button id="retry" hidden>다시 불러오기</button></div>
+  </main>
+  <footer><span>아홉시<span class="brand-dot">.</span> <span class="footer-description">매일 새롭게 펼치는 AI 뉴스</span></span><p>국내 기사 · 매일 오전 9시 수집 시작<br>기사 및 이미지의 권리는 각 언론사에 있습니다.</p></footer>
+</body>
+</html>

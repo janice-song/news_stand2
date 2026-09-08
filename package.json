@@ -1,0 +1,6 @@
+{
+  "name": "ai-newsstand", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": { "collect": "node scripts/collect.mjs", "build": "node scripts/build.mjs", "start": "node scripts/serve.mjs", "test": "node --test" },
+  "dependencies": { "fast-xml-parser": "^5.2.5", "cheerio": "^1.1.2" },
+  "engines": { "node": ">=22" }
+}
