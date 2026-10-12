@@ -2,22 +2,22 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="매일 아침 9시, AI·자동차·국내외 기업 이슈를 카테고리별 최대 5건으로.">
-  <title>아홉시 — 나의 뉴스스탠드</title>
+  <meta name="description" content="매일 아침 7시, AI·자동차·국내외 기업 이슈를 카테고리별 최대 5건으로.">
+  <title>일곱시 — 나의 뉴스스탠드</title>
   <link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script>
 </head>
 <body>
-  <header class="masthead"><a class="brand" href="/" aria-label="아홉시 홈">아홉시<span class="brand-dot">.</span></a><span class="edition">DAILY NEWSSTAND<br>DAILY EDITION · 09:00 KST</span></header>
+  <header class="masthead"><a class="brand" href="/" aria-label="일곱시 홈">일곱시<span class="brand-dot">.</span></a><span class="edition">DAILY NEWSSTAND<br>DAILY EDITION · 07:00 KST</span></header>
   <main>
     <section class="heading"><div><p class="eyebrow">하루 한 번, 나의 시선으로</p><h1>오늘의 이슈, 한눈에.</h1></div><p id="edition-date" class="date">오늘의 지면을 준비합니다.</p></section>
     <section class="preferences" aria-labelledby="preference-title"><div class="preference-label"><h2 id="preference-title">나의 관심사</h2><p>선택한 카테고리가 먼저 보여요. 각 최대 5건.</p></div><div id="topics" class="chips" role="group" aria-label="우선 표시할 관심 주제"></div></section>
-    <div class="toolbar"><p id="count" aria-live="polite">기사를 불러오는 중</p><div><button id="restore" class="text-button" hidden>숨긴 기사 복원</button><label class="sort-label">정렬 <select id="sort"><option value="personal">내 취향순</option><option value="latest">최신순</option></select></label></div></div>
+    <div class="toolbar"><p id="count" aria-live="polite">기사를 불러오는 중</p><div><button id="restore" class="text-button" hidden>숨긴 기사 복원</button><label class="sort-label">보기 <select id="view"><option value="slide">가로 슬라이드</option><option value="grid">전체 바둑판</option></select></label><label class="sort-label">정렬 <select id="sort"><option value="personal">내 취향순</option><option value="latest">최신순</option></select></label></div></div>
     <p id="notice" class="notice" role="status" hidden></p>
     <section id="news" class="issues" aria-label="기사 목록" aria-busy="true"></section>
-    <div id="empty" class="empty" hidden><span class="empty-symbol">09:00</span><h2 id="empty-title">기사를 불러오는 중입니다.</h2><p id="empty-description"></p><button id="retry" hidden>다시 불러오기</button></div>
+    <div id="empty" class="empty" hidden><span class="empty-symbol">07:00</span><h2 id="empty-title">기사를 불러오는 중입니다.</h2><p id="empty-description"></p><button id="retry" hidden>다시 불러오기</button></div>
     <details class="company-basis"><summary>10대 기업 선정 기준과 수집 대상</summary><p>국내: 2026년 자산총액 상위 기업집단 — 삼성, SK, 현대자동차, LG, 한화, 롯데, 포스코, HD현대, 농협, GS.</p><p>글로벌: 2026년 10월 5일 시가총액 기준 고정 목록 — 엔비디아, 애플, 알파벳, 마이크로소프트, 아마존, TSMC, 스페이스X, 메타, 브로드컴, 사우디 아람코. 순위는 자동 갱신되지 않습니다.</p><p>국내 언론 보도에서 수집합니다. AI·자동차 주제는 해당 카테고리에 우선 배치하며, 제목과 발췌문이 유사한 기사는 하나만 표시합니다.</p></details>
   </main>
-  <footer><span>아홉시<span class="brand-dot">.</span> <span class="footer-description">하루 최대 20건, 겹치는 이슈 없이</span></span><p>국내 기사 · 매일 오전 9시 수집 시작<br>기사 및 이미지의 권리는 각 언론사에 있습니다.</p></footer>
+  <footer><span>일곱시<span class="brand-dot">.</span> <span class="footer-description">하루 최대 20건, 겹치는 이슈 없이</span></span><p>국내 기사 · 매일 오전 7시 수집 시작<br>기사 및 이미지의 권리는 각 언론사에 있습니다.</p></footer>
 </body>
 </html>
 

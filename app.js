@@ -22,16 +22,30 @@ function card(article) {
   bottom.append(time, hide); root.append(link, bottom); return root;
 }
 function render() {
-  const ranked = rankArticles(articles, preferences, $('sort').value); const sections = [...topics].sort((a,b) => Number(preferences.topics.includes(b))-Number(preferences.topics.includes(a))).map(topic => {
-    const section=element('section','issue-section'); const list=ranked.filter(a=>a.category===topic).slice(0,5);
-    section.append(element('h2','issue-heading',`${topic} · ${list.length}`));
-    if(list.length){const grid=element('div','grid');grid.append(...list.map(card));section.append(grid);}
-    else section.append(element('p','section-empty','현재 표시할 기사가 없습니다. 다음 지면에서 확인해 주세요.'));
-    return section;
-  }); $('news').replaceChildren(...sections); $('count').textContent = `${ranked.length}개의 기사`; $('restore').hidden = !preferences.hidden.length;
+  const ranked = rankArticles(articles, preferences, $('sort').value);
+  const grid=element('div', $('view').value === 'slide' ? 'article-track' : 'grid');
+  grid.id='article-track'; grid.append(...ranked.map(card));
+  $('news').replaceChildren();
+  if($('view').value === 'slide' && ranked.length){
+    const controls=element('div','slide-controls');
+    const previous=element('button','','← 이전 기사'), next=element('button','','다음 기사 →');
+    previous.setAttribute('aria-controls',grid.id); next.setAttribute('aria-controls',grid.id);
+    const step=direction=>grid.scrollBy({left:direction*((grid.firstElementChild?.getBoundingClientRect().width||300)+22),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+    previous.onclick=()=>step(-1);next.onclick=()=>step(1);
+    const update=()=>{previous.disabled=grid.scrollLeft<=2;next.disabled=grid.scrollLeft+grid.clientWidth>=grid.scrollWidth-2;};
+    grid.addEventListener('scroll',update,{passive:true});
+    grid.tabIndex=0;grid.setAttribute('aria-label','기사 가로 슬라이드. 좌우 방향키로 이동');
+    grid.onkeydown=e=>{if(e.target===grid && ['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();step(e.key==='ArrowLeft'?-1:1);}};
+    controls.append(previous,element('span','','옆으로 밀어서 다음 기사를 읽으세요'),next);$('news').append(controls);
+    requestAnimationFrame(update);
+    if(window.trackResize)window.trackResize.disconnect();window.trackResize=new ResizeObserver(update);window.trackResize.observe(grid);
+  } else if(window.trackResize)window.trackResize.disconnect();
+  $('news').append(grid); $('count').textContent = `${ranked.length}개의 기사`; $('restore').hidden = !preferences.hidden.length;
   $('empty').hidden = ranked.length > 0; $('empty-title').textContent = articles.length ? '모든 기사를 숨겼어요.' : '이번 지면에 해당하는 기사가 없습니다.'; $('empty-description').textContent = articles.length ? '숨긴 기사 복원 버튼을 누르면 다시 볼 수 있어요.' : '다음 갱신 때 새로운 기사를 확인해 주세요.';
 }
 $('sort').onchange = render;
+try { $('view').value=localStorage.getItem('seven-news-view')==='grid'?'grid':'slide'; } catch {}
+$('view').onchange=()=>{try{localStorage.setItem('seven-news-view',$('view').value);}catch{}render();};
 $('restore').onclick = () => { preferences.hidden = []; preferences.disliked = {}; save(); render(); };
 async function load() {
   $('news').setAttribute('aria-busy', 'true'); $('retry').hidden = true;
@@ -40,7 +54,7 @@ async function load() {
     if (!Array.isArray(data.articles)) throw new Error('shape');
     articles = data.articles.filter(a => safeUrl(a.url) && typeof a.title === 'string' && Number.isFinite(Date.parse(a.publishedAt)));
     const updated = data.generatedAt ? new Date(data.generatedAt) : null;
-    $('edition-date').textContent = updated ? `${new Date(data.windowEnd).toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric' })} 오전 9시 지면 · 직전 24시간\n${updated.toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', hour12: false })} 갱신` : '아직 첫 기사를 수집하지 않았습니다.';
+    $('edition-date').textContent = updated ? `${new Date(data.windowEnd).toLocaleDateString('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric' })} 오전 7시 지면 · 직전 24시간\n${updated.toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', hour12: false })} 갱신` : '아직 첫 기사를 수집하지 않았습니다.';
     const stale = !updated || Date.now() - new Date(data.windowEnd).getTime() > 26 * 3600000;
     $('notice').hidden = !stale && !data.errors?.length;
     $('notice').textContent = stale ? (updated ? '최신 지면 갱신이 지연되고 있습니다. 표시된 갱신 시각을 확인해 주세요.' : '아직 첫 지면을 수집하지 못했습니다. 수집이 완료되면 기사가 표시됩니다.') : '일부 검색 결과를 수집하지 못했거나 조회 한도에 도달했습니다. 확보된 기사만 표시합니다.';

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-12T04:21:47.347Z",
-  "windowStart": "2026-10-11T00:00:00.000Z",
-  "windowEnd": "2026-10-12T00:00:00.000Z",
+  "generatedAt": "2026-10-12T04:31:36.791Z",
+  "windowStart": "2026-10-10T22:00:00.000Z",
+  "windowEnd": "2026-10-11T22:00:00.000Z",
   "schemaVersion": 2,
   "companyBasis": {
     "domestic": "2026년 공시대상기업집단 자산총액 상위 10개",
@@ -46,186 +46,6 @@
   },
   "articles": [
     {
-      "id": "e0e7a7d95ce28b338f38",
-      "title": "지슨, AI 해킹 시대 보안 수혜주 부각…무선백도어 탐지",
-      "url": "https://www.newsis.com/view/NISX20261012_0003821482",
-      "source": "뉴시스",
-      "publishedAt": "2026-10-11T23:58:00.000Z",
-      "category": "AI",
-      "excerpt": "지슨의 시스템은 KB국민·신한·하나·우리·NH농협은행 등 국내 5대 은행을 비롯해 금융회사 16곳에 공급됐고, 글로벌 반도체 대기업 등에도 납품됐다. 올해 상반기 무선백도어 보안 ",
-      "image": null
-    },
-    {
-      "id": "674f630f68e00701c739",
-      "title": "\"갤럭시S27 울트라, 화면 확 바뀐다\"…3가지 변화는",
-      "url": "https://zdnet.co.kr/view/?no=20261012083711",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-10-11T23:57:00.000Z",
-      "category": "국내 10대 대기업 뉴스",
-      "excerpt": "현재 삼성전자의 플래그십 스마트폰과 애플의 플래그십 스마트폰은 PWM 디밍을 사용하고 있다. 일부... 이 패널은 아이폰18 프로와 아이폰18 프로 맥스, 애플의 첫 폴더블 스마트",
-      "image": null
-    },
-    {
-      "id": "21841ee72518273a2645",
-      "title": "[인터뷰] 현해남 이씨에스 대표 \"생성형 AI로 상담 자동화 이끌 것\"",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=675410",
-      "source": "블로터",
-      "publishedAt": "2026-10-11T23:52:00.000Z",
-      "category": "AI",
-      "excerpt": "이씨에스는 2017년 NH농협은행의 AI 고객센터를 구축하며 인연을 맺었다. 이듬해에는 실시간... 이씨에스는 이후에도 농협은행과 협력을 이어왔다. 지난해에는 대규모 AI 고객센터",
-      "image": null
-    },
-    {
-      "id": "4ba3dccb11939877640f",
-      "title": "롯데, 日 모빌리티쇼에 6개 계열사 출격…소재부터 자율주행·물류까지",
-      "url": "https://www.news1.kr/industry/distribution/6316309",
-      "source": "뉴스1",
-      "publishedAt": "2026-10-11T23:49:00.000Z",
-      "category": "자동차",
-      "excerpt": "롯데인프라셀과 롯데에너지머티리얼즈는 전기차 배터리용 양극박과 코팅박, 동박을 전시한다. 롯데이노베이트는 자율주행 모빌리티 서비스와 AI 스마트톨링, 차세대 지능형 교통체계(C-IT",
-      "image": null
-    },
-    {
-      "id": "1ab407155c25958fc6ef",
-      "title": "[원AI] 현대차, 가정용 전기차 충전기 구독 서비스 '마이홈차저' 출시",
-      "url": "https://www.etnews.com/20261012000007",
-      "source": "전자신문",
-      "publishedAt": "2026-10-11T23:44:00.000Z",
-      "category": "자동차",
-      "excerpt": "현대자동차가 충전사업자 채비와 협력해 가정용 전기차 충전기 구독 서비스 '마이홈차저'를 30일 출시했다. 마이홈차저는 단독·연립주택 등 전용 주차 공간을 갖춘 현대차·제네시스 전기",
-      "image": null
-    },
-    {
-      "id": "6fb83c0236e8fc1d0b69",
-      "title": "YTN 민영화·구글·텔레그램까지…과방위, 방송·플랫폼 책임성 집중 점...",
-      "url": "https://www.mt.co.kr/politics/2026/10/12/2026101208355570833",
-      "source": "머니투데이",
-      "publishedAt": "2026-10-11T23:44:00.000Z",
-      "category": "글로벌 10대 기업 뉴스",
-      "excerpt": "YTN 민영화 과정에서의 정부 개입 여부와 구글·텔레그램 등 글로벌 플랫폼의 책임, 인공지능(AI) 캐릭터 챗봇... 윤구 구글코리아 사장은 앱마켓 거래 조건과 유튜브 구독료 차이",
-      "image": null
-    },
-    {
-      "id": "7792c87003d1ef21a00b",
-      "title": "현대차, 인도서 누적판매 1천만대 돌파 눈앞",
-      "url": "https://biz.sbs.co.kr/article_hub/20000339278?division=NAVER",
-      "source": "SBS",
-      "publishedAt": "2026-10-11T23:43:00.000Z",
-      "category": "자동차",
-      "excerpt": "현대차는 이어 베뉴(2019년)와 3열 SUV 알카자르(2021년), 엔트리 SUV 엑스터(2023년)를 잇달아 출시하며 SUV 라인업을 확대했고 지난해에는 첫 현지 생산 전기차인",
-      "image": null
-    },
-    {
-      "id": "c53a940b7229fd2a264b",
-      "title": "KB증권 \"기아, 단기적 이익 증가폭 제한…목표가↓\"",
-      "url": "https://www.yna.co.kr/view/AKR20261012022500008?input=1195m",
-      "source": "연합뉴스",
-      "publishedAt": "2026-10-11T23:42:00.000Z",
-      "category": "자동차",
-      "excerpt": "또 \"자율주행 중심의 자동차 산업 전환 과정에서 중요성이 더 부각될 보스턴 다이내믹스, 싱가포르 글로벌 혁신센터(HMGICS), 현대차그룹 메타플랜트 아메리카(HMGMA) 등 현대",
-      "image": null
-    },
-    {
-      "id": "cd17d3c9ed1103c1f95d",
-      "title": "애플 스마트홈 신제품은 ‘홈뷰’…11월 중순 출시 유력",
-      "url": "https://zdnet.co.kr/view/?no=20261012081049",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-10-11T23:40:00.000Z",
-      "category": "글로벌 10대 기업 뉴스",
-      "excerpt": "애플의 새로운 스마트홈 허브 신제품이 공개 후 약 한 달 뒤인 11월 중순 출시될 것이라는 전망이 나왔다. 블룸버그통신은 11일(이하 현지시간) 파워온 뉴스레터를 통해 애플 스마트",
-      "image": null
-    },
-    {
-      "id": "713b65ed9e78e5bcbe0a",
-      "title": "삼성전자 '패밀리허브·무빙스타일', 美 포브스 '스마트홈 어워드' 수상",
-      "url": "https://www.news1.kr/industry/general-industry/6316252",
-      "source": "뉴스1",
-      "publishedAt": "2026-10-11T23:37:00.000Z",
-      "category": "국내 10대 대기업 뉴스",
-      "excerpt": "올해 출시된 2026년형 비스포크 AI 패밀리허브 냉장고는 생성형 인공지능(AI) 구글 제미나이(Google Gemini)와 결합해 식품 인식 성능이 크게 향상된 'AI 비전'(A",
-      "image": null
-    },
-    {
-      "id": "8cb56a80552fddb24ae3",
-      "title": "\"아마존, 가상환경 생성 AI 개발사 데카르트 9조 원에 인수 논의\"",
-      "url": "https://www.ytn.co.kr/_ln/0104_202610120835183986",
-      "source": "YTN",
-      "publishedAt": "2026-10-11T23:35:00.000Z",
-      "category": "AI",
-      "excerpt": "아마존이 이스라엘계 인공지능(AI) 스타트업 데카르트를 70억 달러(약 9조4천억 원)에 인수하는 방안을 논의... 아마존은 그래픽처리장치(GPU) 시장을 장악한 엔비디아에 맞서 ",
-      "image": null
-    },
-    {
-      "id": "e4745d25959056c914ff",
-      "title": "다올증권 \"HD현대마린, 골텐스 인수로 경쟁력 확대…목표가↑\"",
-      "url": "https://www.yna.co.kr/view/AKR20261012021100008?input=1195m",
-      "source": "연합뉴스",
-      "publishedAt": "2026-10-11T23:33:00.000Z",
-      "category": "국내 10대 대기업 뉴스",
-      "excerpt": "다올투자증권은 12일 HD현대마린솔루션에 대해 글로벌 엔진 유지·보수·운영(MRO) 기업 골텐스 인수로 사업 경쟁력 확대가 기대된다며 목표주가를 29만원에서 31만원으로 올렸다. ",
-      "image": null
-    },
-    {
-      "id": "33cf2dab7213bb465920",
-      "title": "역대급 깜짝 실적에…LG에너지솔루션 프리마켓서 2%대 상승[줍줍리포트...",
-      "url": "https://www.sedaily.com/article/20100274?ref=naver",
-      "source": "서울경제",
-      "publishedAt": "2026-10-11T23:31:00.000Z",
-      "category": "국내 10대 대기업 뉴스",
-      "excerpt": "유럽 전기차에 납품하는 미드니켈 배터리(니켈 함량 약 40~60%의 중밀도 배터리) 시장의 성장세와 미국 GM이나 현대자동차와 합작한 배터리공장 등도 실적 상승을 견인한 것으로 풀",
-      "image": null
-    },
-    {
-      "id": "0962bb5f707339c379ef",
-      "title": "[알림]\"에너지, 결코 다시 에너지\"…AI 시대 해법 28~30일 확인하자",
-      "url": "https://www.mt.co.kr/industry/2026/10/12/2026101110282981904",
-      "source": "머니투데이",
-      "publishedAt": "2026-10-11T23:30:00.000Z",
-      "category": "AI",
-      "excerpt": "오후에는 김성엽 OCI파워 대표가 'AI 데이터센터에서 RE(재생에너지) 및 BESS의 중요성'을, 옥경석 HD현대일렉트릭 전력기기 해외영업담당 상무가 'AI 데이터센터와 변압기 ",
-      "image": null
-    },
-    {
-      "id": "d1c836a6897004bc0e22",
-      "title": "마이크론은 버티는데 SK하이닉스만 싸졌다…iM證 “외국인 이탈·솔리다...",
-      "url": "https://biz.chosun.com/stock/stock_general/2026/10/12/Q33BOYECERGCZMPL6BYSUJIYTE/",
-      "source": "조선일보",
-      "publishedAt": "2026-10-11T23:30:00.000Z",
-      "category": "국내 10대 대기업 뉴스",
-      "excerpt": "마이크로소프트의 오픈AI 관련 매출이나 아마존·구글과 앤트로픽의 투자·클라우드 거래 관계처럼 투자자와 공급자, 고객이 서로 겹치는 구조가 시장의 의구심을 키우고 있다는 설명이다. ",
-      "image": null
-    },
-    {
-      "id": "76ba6e08b8c9280482cd",
-      "title": "\"엔비디아 AI칩 中 밀반출\"…3.4조원 규모 공모자 유죄 인정",
-      "url": "https://www.edaily.co.kr/News/Read?newsId=02115606645612264&mediaCodeNo=257",
-      "source": "이데일리",
-      "publishedAt": "2026-10-11T23:29:00.000Z",
-      "category": "AI",
-      "excerpt": "엔비디아의 첨단 AI 칩을 탑재한 서버를 중국으로 불법 반출하고, 미국 당국의 검사를 피하기 위해 가짜... 불법 수출 대상에는 엔비디아의 고성능 그래픽처리장치(GPU)인 B200",
-      "image": null
-    },
-    {
-      "id": "48df69d83482530a3c9b",
-      "title": "중국차 몰려드는 파리…현대차·기아 소형 전기차로 유럽 공략",
-      "url": "https://www.mt.co.kr/industry/2026/10/12/2026101113480833237",
-      "source": "머니투데이",
-      "publishedAt": "2026-10-11T23:20:00.000Z",
-      "category": "자동차",
-      "excerpt": "현대자동차·기아가 올해 프랑스 파리 모터쇼에 소형 전기차와 주력 SUV(다목적차량)를 내세우며 유럽 고객 확대에 나선다. 중국 업체들이 역대 최대 규모로 참가하는 등 경쟁 업체들의",
-      "image": null
-    },
-    {
-      "id": "4e0939c2a25cc2c2c16f",
-      "title": "'금융위기 수준' 외국인 매도 폭탄, 삼전닉스 말고 TSMC가 답이다?",
-      "url": "https://www.ytn.co.kr/_ln/0102_202610120733168840",
-      "source": "YTN",
-      "publishedAt": "2026-10-11T22:33:00.000Z",
-      "category": "글로벌 10대 기업 뉴스",
-      "excerpt": "계시지만, '대만 TSMC가 차라리 더 매력적이다. 그래서 삼전, 닉스 돈 빼서 그리로 간다. 왜냐하면 거기는 AI... ◇ 오진석 : 'TSMC'는 전문 파운드리 업체이기 때문에",
-      "image": null
-    },
-    {
       "id": "295bb3ff3fac332bc660",
       "title": "[주간경제일정] 美 CPI·PPI 지표부터…ASML·TSMC 실적 발표까지",
       "url": "https://biz.sbs.co.kr/article_hub/20000339236?division=NAVER",
@@ -236,6 +56,46 @@
       "image": null
     },
     {
+      "id": "f66a55660310e5ae93d9",
+      "title": "MS CEO “AI 비상장치 마련 필요...언제든 종료할 수 있어야”",
+      "url": "https://www.etnews.com/20261012000001",
+      "source": "전자신문",
+      "publishedAt": "2026-10-11T21:55:00.000Z",
+      "category": "AI",
+      "excerpt": "사티아 나델라 마이크로소프트(MS) 최고경영자(CEO)가 인공지능(AI) 모델의 행동을 인간이 언제든 중단할 수 있는 '비상 브레이크'의 필요성을 강조했다. AI 에이전트가 인간의",
+      "image": null
+    },
+    {
+      "id": "4c0ec75009ac12f8ac02",
+      "title": "“AI에 ‘비상 브레이크’ 필수”…MS CEO“ 내부자 위험처럼 통제해야...",
+      "url": "https://www.mk.co.kr/article/12173234",
+      "source": "매일경제",
+      "publishedAt": "2026-10-11T21:49:00.000Z",
+      "category": "AI",
+      "excerpt": "사티아 나델라 마이크로소프트(MS) 최고경영자(CEO)는 11일(현지시간) 사회관계망서비스(SNS) 엑스(X)에 ‘슈퍼지능 시대 내부자 위험으로서의 모델’이란 제목의 글을 올리고 ",
+      "image": null
+    },
+    {
+      "id": "4e35dcaca00726e6c2c5",
+      "title": "기로에 선 사이버 보안… 글로벌 민·관 모여 'AI 위협' 해법 찾는다",
+      "url": "https://www.ddaily.co.kr/page/view/2026101114595620040",
+      "source": "디지털데일리",
+      "publishedAt": "2026-10-11T21:45:00.000Z",
+      "category": "AI",
+      "excerpt": "아마존웹서비스(AWS), 시스코, 구글, 마이크로소프트(MS) 등 글로벌 빅테크 기업도 무대에 올라 대응 전략을 공유한다. 부대 행사로는 사이버보안 콘퍼런스 및 전시회 '거브웨어(",
+      "image": null
+    },
+    {
+      "id": "2b579c497a5eb789e4f0",
+      "title": "오피스·슬라이드 품는 챗GPT·클로드…파트너 영역까지 삼킨다 [AI 생존...",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171675",
+      "source": "조선일보",
+      "publishedAt": "2026-10-11T21:36:00.000Z",
+      "category": "AI",
+      "excerpt": "이 같은 행보는 2019년부터 오픈AI와 전략적 협력 관계를 이어온 마이크로소프트(MS)의 핵심 사업과도 정면으로 부딪힌다. MS는 워드·엑셀·파워포인트에 오픈AI의 모델 등을 활",
+      "image": null
+    },
+    {
       "id": "15982d56fa184e2c9d84",
       "title": "[MUST KNOW5]스페이스X↑·애플↓·모더나 '폭등'...투자자가 알아야 할 ...",
       "url": "https://www.edaily.co.kr/News/Read?newsId=01758086645612264&mediaCodeNo=257",
@@ -243,6 +103,146 @@
       "publishedAt": "2026-10-11T21:34:00.000Z",
       "category": "글로벌 10대 기업 뉴스",
       "excerpt": "스페이스X, 저대역 주파수 거액 인수…이동통신 사업 확장 일론 머스크가 이끄는 스페이스X가 저대역 주파수를 거액에 인수하며 이동통신 사업 확장에 나섰습니다. 현지시간 9일 포브스에",
+      "image": null
+    },
+    {
+      "id": "c4e86752fdadd6b258c0",
+      "title": "“AI 해킹 막아라”… 금융권 해킹에 보안 스타트업 몸값 올라",
+      "url": "https://www.chosun.com/economy/tech_it/2026/10/12/J6ISSWSZTBCUTLFD7EVTVJYDTI/",
+      "source": "조선일보",
+      "publishedAt": "2026-10-11T21:31:00.000Z",
+      "category": "AI",
+      "excerpt": "보안에 민감한 애플도 동형 암호 기술을 사용하고 있다. 천 교수는 “최근 금융권 해킹 사고는 일회성이 아니라 앞으로 끊임없이 광범위하고 집요하게 벌어질 사태의 시작”이라면서 “데이",
+      "image": null
+    },
+    {
+      "id": "af3620746c466355f191",
+      "title": "美 안두릴, 9조 규모 핵잠수함 부품 생산시설 구축…'파트너' HD현대 눈...",
+      "url": "https://www.news1.kr/industry/general-industry/6315589",
+      "source": "뉴스1",
+      "publishedAt": "2026-10-11T21:30:00.000Z",
+      "category": "국내 10대 대기업 뉴스",
+      "excerpt": "미국 방산기업 안두릴이 총 66억 달러(약 9조 원) 규모의 핵추진 잠수함 부품 생산시설 구축을 추진하면서 파트너사인 HD현대(267250)의 역할에 관심이 쏠린다. HD현대가 한",
+      "image": null
+    },
+    {
+      "id": "7b4c6597408cd567adda",
+      "title": "두산건설, 도시정비 수주 4조 돌파…포스코·대우·롯데와 어깨 나란히",
+      "url": "https://realty.chosun.com/site/data/html_dir/2026/10/08/2026100803073.html",
+      "source": "조선일보",
+      "publishedAt": "2026-10-11T21:02:00.000Z",
+      "category": "국내 10대 대기업 뉴스",
+      "excerpt": "올 상반기 수주액이 4조원대인 10대 건설사는 포스코이앤씨(4조4565억원), 대우건설(4조3530억원), 롯데건설(4조110억원) 등이 있다. 두산건설은 서울과 수도권에서 공격적",
+      "image": null
+    },
+    {
+      "id": "f410855a909d7c098419",
+      "title": "땅찾기부터 경영 컨설팅까지…알짜농가 키운 농협銀 ‘금융동행’",
+      "url": "https://www.edaily.co.kr/News/Read?newsId=01620326645612264&mediaCodeNo=257",
+      "source": "이데일리",
+      "publishedAt": "2026-10-11T21:02:00.000Z",
+      "category": "국내 10대 대기업 뉴스",
+      "excerpt": "태원팜 농장 내부.(사진=NH농협은행 제공) 최원묵 태원팜 대표는 2024년 이곳에 농장을 열었다. 태원팜은 개업... 태원팜이 이처럼 단기간에 자리를 잡는 데는 NH농협은행과의 ",
+      "image": null
+    },
+    {
+      "id": "2100be86efdcd06084a3",
+      "title": "농민 몫 4분의 1도 안 돼…농협, 대출 공급액 90% 준·비조합원에",
+      "url": "https://www.sedaily.com/article/20100239?ref=naver",
+      "source": "서울경제",
+      "publishedAt": "2026-10-11T21:01:00.000Z",
+      "category": "국내 10대 대기업 뉴스",
+      "excerpt": "전국 단위 농협의 대출 잔액에서 농민 조합원이 차지하는 몫이 4분의 1에도 못 미치는 것으로 나타났다.... 농민 감소로 조합원 대출 수요가 줄어드는 가운데 농협의 금융 사업이 조",
+      "image": null
+    },
+    {
+      "id": "a764951400c72f0a53e3",
+      "title": "스페이스X 투자 대박 뒤 커진 ‘이익 민감도’…미래에셋증권 “변동성...",
+      "url": "https://biz.chosun.com/stock/stock_general/2026/10/12/SPAVEPLVDJG4FMZF6RS2RXXF4Q/",
+      "source": "조선일보",
+      "publishedAt": "2026-10-11T21:01:00.000Z",
+      "category": "글로벌 10대 기업 뉴스",
+      "excerpt": "회사가 대규모로 투자한 스페이스X 주가가 하락한 데다, 원·달러 환율까지 떨어지면서 평가 손익이 크게 줄어든 영향이다. 스페이스X 투자로 미래에셋증권의 이익 규모가 크게 확대된 만",
+      "image": null
+    },
+    {
+      "id": "0a6ca2400b2809ca7535",
+      "title": "한화·현대로템, '스페이스X식' 재사용 로켓에 승부수 건다",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171712",
+      "source": "조선일보",
+      "publishedAt": "2026-10-11T21:00:00.000Z",
+      "category": "국내 10대 대기업 뉴스",
+      "excerpt": "스페이스X가 주도하는 글로벌 우주 수송 시장의 '게임 체인저'로 꼽히는 '재사용 발사체' 개발에 한국 민간... 같은달 일본 우주항공연구개발기구(JAXA)는 소형 재사용 발사체 '",
+      "image": null
+    },
+    {
+      "id": "4d4791ae0618f79292ec",
+      "title": "성평등부, 네이버·구글 등과 디지털성범죄 대응 간담회",
+      "url": "https://www.yna.co.kr/view/AKR20261009038400530?input=1195m",
+      "source": "연합뉴스",
+      "publishedAt": "2026-10-11T21:00:00.000Z",
+      "category": "글로벌 10대 기업 뉴스",
+      "excerpt": "이번 간담회는 구글과 협업하는 해외 연구 프로젝트 사이트에서 발생한 디지털성범죄 피해자 개인정보 유출을 계기로 마련됐으며 네이버, 카카오, 네이트, 디시인사이드, 구글, 메타, 틱",
+      "image": null
+    },
+    {
+      "id": "83477006f2d4f02f905d",
+      "title": "\"성범죄 피해자 정보보호 강화\"…성평등부, 네이버·구글과 간담회",
+      "url": "https://www.newsis.com/view/NISX20261009_0003820303",
+      "source": "뉴시스",
+      "publishedAt": "2026-10-11T21:00:00.000Z",
+      "category": "글로벌 10대 기업 뉴스",
+      "excerpt": "성평등가족부는 12일 오후 서울 종로구 정부서울청사에서 네이버·카카오·구글·메타·틱톡·네이트·디시인사이드 등 국내외 주요 플랫폼 사업자들과 간담회를 열고 디지털성범죄 대응 협력방안",
+      "image": null
+    },
+    {
+      "id": "34071fc3147b1cb22002",
+      "title": "\"14억 인구·세계 3위 車시장\"…현대차가 인도에 공들이는 이유",
+      "url": "https://www.newsis.com/view/NISX20261011_0003820947",
+      "source": "뉴시스",
+      "publishedAt": "2026-10-11T20:30:00.000Z",
+      "category": "자동차",
+      "excerpt": "현대자동차가 세계 3위 자동차 시장인 인도를 글로벌 핵심 생산·판매 거점으로 육성하고 있다. 현지 자동차 수요가 확대되는 가운데 생산능력을 늘려 내수 시장을 공략하는 동시에 신흥국",
+      "image": null
+    },
+    {
+      "id": "41a6b50a81973beed1d8",
+      "title": "현대차, 인도 누적 판매 1000만대 눈앞",
+      "url": "https://www.seoul.co.kr/news/economy/car/2026/10/12/20261012031004?wlog_tag3=naver",
+      "source": "서울신문",
+      "publishedAt": "2026-10-11T20:05:00.000Z",
+      "category": "자동차",
+      "excerpt": "현대자동차가 인도 진출 30년 만에 연내에 누적 판매 1000만대 돌파를 기대하고 있다. 11일 인도자동차공업협회(SIAM)에 따르면 현대차는 1998년 인도 첸나이 공장에서 쌍트",
+      "image": null
+    },
+    {
+      "id": "4e82bee89fec6e3adc55",
+      "title": "현대차는 ‘데스 밸리’ 진입… “앞으로 2년 힘겹게 버텨야”",
+      "url": "https://www.chosun.com/economy/industry-company/2026/10/12/SE2NP2YLGJDTBHURVGHZZOSARM/",
+      "source": "조선일보",
+      "publishedAt": "2026-10-11T15:43:00.000Z",
+      "category": "자동차",
+      "excerpt": "현대차그룹은 올해 초 테슬라·엔비디아 출신 박민우 사장을 영입하고, 2028년부터 엔비디아 기술을 적용한 차량을 양산하겠다는 계획을 내놨다. 운전자의 감독이 필요한 고도화된 주행보",
+      "image": null
+    },
+    {
+      "id": "476cc15656a966f073d2",
+      "title": "현대차 3대 시장된 인도… 30년만에 누적 판매 1000만대 눈앞",
+      "url": "https://www.donga.com/news/Economy/article/all/20261011/134821443/2",
+      "source": "동아일보",
+      "publishedAt": "2026-10-11T15:32:00.000Z",
+      "category": "자동차",
+      "excerpt": "현대자동차가 인도 진출 30년 만에 현지 누적 판매량 1000만 대를 코앞에 뒀다. 11일 현대차에 따르면 올해 9월까지 이 회사가 인도에서 판매한 차량은 총 988만4960대다.",
+      "image": null
+    },
+    {
+      "id": "ad555744d0446cac9d26",
+      "title": "네이버 들어온 푸조…자동차도 ‘클릭 쇼핑’ 시대",
+      "url": "https://www.joongang.co.kr/article/25468777",
+      "source": "중앙일보",
+      "publishedAt": "2026-10-11T15:02:00.000Z",
+      "category": "자동차",
+      "excerpt": "현대차·기아는 미국에서 ‘아마존 오토스’ 플랫폼을 통해 온라인 판매 중이고, 영국에선 자체 온라인 플랫폼으로 차량을 판매한다. 현대차는 아마존과 협력해 내년 초 아마존 오토스를 미",
       "image": null
     }
   ],
@@ -272,6 +272,10 @@
       "code": "SEARCH_LIMIT_REACHED"
     },
     {
+      "query": "현대자동차",
+      "code": "SEARCH_LIMIT_REACHED"
+    },
+    {
       "query": "LG",
       "code": "SEARCH_LIMIT_REACHED"
     },
@@ -289,6 +293,10 @@
     },
     {
       "query": "엔비디아",
+      "code": "SEARCH_LIMIT_REACHED"
+    },
+    {
+      "query": "아마존",
       "code": "SEARCH_LIMIT_REACHED"
     },
     {
