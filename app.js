@@ -1,6 +1,6 @@
 import { topics, rankArticles, safeUrl } from './lib/preferences.js';
 const $ = id => document.getElementById(id);
-const key = 'nine-news-preferences-v1';
+const key = 'nine-news-preferences-v2';
 let preferences = { topics: [], hidden: [], disliked: {} }, articles = [];
 try { const saved = JSON.parse(localStorage.getItem(key)); if (saved && Array.isArray(saved.topics) && Array.isArray(saved.hidden)) preferences = { topics: saved.topics.filter(t => topics.includes(t)), hidden: saved.hidden.filter(x => typeof x === 'string'), disliked: Object.fromEntries(topics.map(t => [t, Math.max(0, Math.min(5, Number(saved.disliked?.[t]) || 0))])) }; } catch {}
 function save() { try { localStorage.setItem(key, JSON.stringify(preferences)); } catch { $('notice').hidden = false; $('notice').textContent = '브라우저 저장이 제한되어 관심사가 이번 방문에만 적용됩니다.'; } }
@@ -22,8 +22,14 @@ function card(article) {
   bottom.append(time, hide); root.append(link, bottom); return root;
 }
 function render() {
-  const ranked = rankArticles(articles, preferences, $('sort').value); $('news').replaceChildren(...ranked.map(card)); $('count').textContent = `${ranked.length}개의 기사`; $('restore').hidden = !preferences.hidden.length;
-  $('empty').hidden = ranked.length > 0; $('empty-title').textContent = articles.length ? '모든 기사를 숨겼어요.' : '이번 지면에 해당하는 기사가 없습니다.'; $('empty-description').textContent = articles.length ? '숨긴 기사 복원 버튼을 누르면 다시 볼 수 있어요.' : '다음 갱신 때 새로운 국내 AI 기사를 확인해 주세요.';
+  const ranked = rankArticles(articles, preferences, $('sort').value); const sections = [...topics].sort((a,b) => Number(preferences.topics.includes(b))-Number(preferences.topics.includes(a))).map(topic => {
+    const section=element('section','issue-section'); const list=ranked.filter(a=>a.category===topic).slice(0,5);
+    section.append(element('h2','issue-heading',`${topic} · ${list.length}`));
+    if(list.length){const grid=element('div','grid');grid.append(...list.map(card));section.append(grid);}
+    else section.append(element('p','section-empty','현재 표시할 기사가 없습니다. 다음 지면에서 확인해 주세요.'));
+    return section;
+  }); $('news').replaceChildren(...sections); $('count').textContent = `${ranked.length}개의 기사`; $('restore').hidden = !preferences.hidden.length;
+  $('empty').hidden = ranked.length > 0; $('empty-title').textContent = articles.length ? '모든 기사를 숨겼어요.' : '이번 지면에 해당하는 기사가 없습니다.'; $('empty-description').textContent = articles.length ? '숨긴 기사 복원 버튼을 누르면 다시 볼 수 있어요.' : '다음 갱신 때 새로운 기사를 확인해 주세요.';
 }
 $('sort').onchange = render;
 $('restore').onclick = () => { preferences.hidden = []; preferences.disliked = {}; save(); render(); };
@@ -45,4 +51,6 @@ async function load() {
 $('retry').onclick = load; load();
 document.addEventListener('visibilitychange', () => { if (!document.hidden) load(); });
 setInterval(load, 15 * 60 * 1000);
+
+
 
